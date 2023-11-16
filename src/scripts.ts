@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const buttonColor = document.querySelector(".button--color") as HTMLElement;
+  const buttonColor = document.querySelector<HTMLButtonElement>(".button--color");
   const squareColor = document.querySelector(".square--color") as HTMLElement;
 
   let colorChanged = false;
@@ -11,8 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const buttonTextChange = document.querySelector(".button--text-change") as HTMLElement;
-  const squareTextChange = document.querySelector(".square--text-change") as HTMLElement;
+  const buttonTextChange = document.querySelector<HTMLButtonElement>(".button--text-change") as HTMLElement;
+  const squareTextChange = document.querySelector(".square--text-change");
 
   buttonTextChange.addEventListener("click", function () {
     squareTextChange.textContent = 
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const buttonInvisible = document.querySelector(".button--invisible") as HTMLElement;
+  const buttonInvisible = document.querySelector<HTMLButtonElement>(".button--invisible");
   const squareInvisible = document.querySelector(".square--invisible") as HTMLElement;
 
   buttonInvisible.addEventListener("click", function () {
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const buttonHideUnhide = document.querySelector(".button--hide-unhide") as HTMLElement;
+  const buttonHideUnhide = document.querySelector<HTMLButtonElement>(".button--hide-unhide");
   const squareHideUnhide = document.querySelector(".square--hide-unhide") as HTMLElement;
 
   buttonHideUnhide.addEventListener("click", function () {
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const buttonColors = document.querySelector(".button--colors") as HTMLElement;
+  const buttonColors = document.querySelector<HTMLButtonElement>(".button--colors");
   const squareColors = document.querySelector(".square--colors") as HTMLElement;
 
   buttonColors.addEventListener("click", function () {
@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const buttonCount = document.querySelector(".button--count") as HTMLElement;
+  const buttonCount = document.querySelector<HTMLButtonElement>(".button--count");
 
   buttonCount.addEventListener("click", function () {
     counter();
@@ -89,7 +89,7 @@ const counter = () => {
 };
 
 document.addEventListener("DOMContentLoaded", function () {
-  const buttonColor = document.querySelector(".button--color-everything") as HTMLElement;
+  const buttonColor = document.querySelector<HTMLButtonElement>(".button--color-everything");
 
   let colorsChanged = false;
 
