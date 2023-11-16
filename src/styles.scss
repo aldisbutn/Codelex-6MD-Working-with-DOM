@@ -1,0 +1,84 @@
+:root {
+  --c-primary: #21243d;
+  --c-secondary: #ff6464;
+  --c-natural: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Heebo", sans-serif;
+  color: var(--c-primary);
+  background-color: var(--c-natural);
+}
+
+.DOM {
+  display: grid;
+  grid-template-columns: 50px 1fr 1fr 1fr 1fr 1fr 1fr 50px;
+  grid-template-rows: 1.5fr 6fr 2.5fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". DOM__buttons DOM__buttons DOM__buttons DOM__buttons DOM__buttons DOM__buttons ."
+    ". DOM__squares DOM__squares DOM__squares DOM__squares DOM__squares DOM__squares ."
+    ". DOM__bottom DOM__bottom DOM__bottom DOM__bottom DOM__bottom DOM__bottom .";
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.DOM__buttons {
+  grid-area: DOM__buttons;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.DOM__squares {
+  grid-area: DOM__squares;
+  margin: 25px 0;
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+
+.DOM__bottom {
+  grid-area: DOM__bottom;
+  margin: 25px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.button {
+  background-color: var(--c-secondary);
+  padding: 20px 40px;
+  border-radius: 8px;
+  border: 0;
+  max-width: 150px;
+}
+
+.button:hover {
+  background-color: #c41c02;
+  transition: 0.3s;
+}
+
+.square {
+  width: 100%;
+  max-width: 300px;
+  max-height: 300px;
+  padding: 100px;
+  background-color: #4290f5;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
